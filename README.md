@@ -1,6 +1,8 @@
 # code-nautilus
 
-Este repositorio é uma extenção do VSCode para o Nautilus em pt_BR.
+Este repositorio é uma extenção do VSCode para o Nautilus em pt_BR.  
+  
+![](img.png)
 
 ## Instalar extenção
 
