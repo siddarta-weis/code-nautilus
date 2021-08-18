@@ -1,14 +1,14 @@
 # code-nautilus
 
-This repo provides a visual studio code extension for Nautilus in pt_BR.
+Este repositorio é uma extenção do VSCode para o Nautilus em pt_BR.
 
-## Install Extension
+## Instalar extenção
 
 ```
 wget -qO- https://raw.githubusercontent.com/siddarta-weis/code-nautilus_pt-BR/master/install.sh | bash
 ```
 
-## Uninstall Extension
+## Desinstalar extenção
 
 ```
 rm -f ~/.local/share/nautilus-python/extensions/code-nautilus.py
