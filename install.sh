@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install python-nautilus
-echo "Installing python-nautilus..."
+echo "Instalando python-nautilus..."
 if type "pacman" > /dev/null 2>&1
 then
     sudo pacman -S --noconfirm python-nautilus
@@ -26,24 +26,24 @@ then
     then
         sudo dnf install -y nautilus-python
     else
-        echo "nautilus-python is already installed."
+        echo "nautilus-python já esta instalado."
     fi
 else
-    echo "Failed to find python-nautilus, please install it manually."
+    echo "Falha ao procurar python-nautilus, por favor instale manualmente."
 fi
 
 # Remove previous version and setup folder
-echo "Removing previous version (if found)..."
+echo "Removendo versão anterior(se achar)..."
 mkdir -p ~/.local/share/nautilus-python/extensions
 rm -f ~/.local/share/nautilus-python/extensions/VSCodeExtension.py
 rm -f ~/.local/share/nautilus-python/extensions/code-nautilus.py
 
 # Download and install the extension
-echo "Downloading newest version..."
+echo "Baixando nova versão..."
 wget --show-progress -q -O ~/.local/share/nautilus-python/extensions/code-nautilus.py https://raw.githubusercontent.com/cra0zy/code-nautilus/master/code-nautilus.py
 
 # Restart nautilus
-echo "Restarting nautilus..."
+echo "Reiniciando o nautilus..."
 nautilus -q
 
-echo "Installation Complete"
+echo "Instalação completa!"
